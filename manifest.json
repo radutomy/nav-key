@@ -32,61 +32,71 @@
 	"commands": {
 		"previous-tab": {
 			"suggested_key": {
-				"default": "Ctrl+H"
+				"default": "Ctrl+H",
+				"mac": "MacCtrl+H"
 			},
 			"description": "Switch to previous tab (Vim-style H)"
 		},
 		"next-tab": {
 			"suggested_key": {
-				"default": "Ctrl+L"
+				"default": "Ctrl+L",
+				"mac": "MacCtrl+L"
 			},
 			"description": "Switch to next tab (Vim-style L)"
 		},
 		"close-tab": {
 			"suggested_key": {
-				"default": "Ctrl+J"
+				"default": "Ctrl+J",
+				"mac": "MacCtrl+J"
 			},
 			"description": "Close current tab (Vim-style J)"
 		},
 		"new-tab": {
 			"suggested_key": {
-				"default": "Ctrl+K"
+				"default": "Ctrl+K",
+				"mac": "MacCtrl+K"
 			},
 			"description": "Open new tab (Vim-style K)"
 		},
 		"scroll-down-30": {
 			"suggested_key": {
-				"default": "Ctrl+D"
+				"default": "Ctrl+D",
+				"mac": "MacCtrl+D"
 			},
 			"description": "Scroll down 30% (Vim-style Ctrl+D)"
 		},
 		"scroll-up-30": {
 			"suggested_key": {
-				"default": "Ctrl+U"
+				"default": "Ctrl+U",
+				"mac": "MacCtrl+U"
 			},
 			"description": "Scroll up 30% (Vim-style Ctrl+U)"
 		},
 		"scroll-down-20px": {
 			"suggested_key": {
-				"default": "Ctrl+E"
+				"default": "Ctrl+E",
+				"mac": "MacCtrl+E"
 			},
 			"description": "Scroll down 20px (Vim-style Ctrl+E)"
 		},
 		"scroll-up-20px": {
 			"suggested_key": {
-				"default": "Ctrl+Y"
+				"default": "Ctrl+Y",
+				"mac": "MacCtrl+Y"
 			},
 			"description": "Scroll up 20px (Vim-style Ctrl+Y)"
 		},
 		"go-back": {
 			"suggested_key": {
-				"default": "Ctrl+O"
+				"default": "Ctrl+O",
+				"mac": "MacCtrl+O"
 			},
 			"description": "Go back in history (Vim-style Ctrl+O)"
 		},
 		"go-forward": {
 			"suggested_key": {
-				"default": "Ctrl+I"
+				"default": "Ctrl+I",
+				"mac": "MacCtrl+I"
 			},
 			"description": "Go forward in history (Vim-style Ctrl+I)"
 		}
