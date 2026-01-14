@@ -1,15 +1,17 @@
 {
 	"manifest_version": 2,
 	"name": "KeyNav",
-	"version": "1.0.0",
-	"description": "Vim-inspired keyboard navigation for tabs, scrolling, and history. Also includes custom shortcuts for a few popular websites",
+	"version": "1.1.0",
+	"description": "Vim-inspired keyboard navigation for tabs, scrolling, and history",
 	"author": "rtom",
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "keynav@rtom.dev",
 			"strict_min_version": "146.0",
 			"data_collection_permissions": {
-				"required": ["none"]
+				"required": [
+					"none"
+				]
 			}
 		}
 	},
