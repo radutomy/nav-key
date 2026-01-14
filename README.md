@@ -2,6 +2,16 @@
 
 Vim-inspired keyboard navigation for Firefox with custom search shortcuts.
 
+## Build
+
+To build the extension package:
+
+```bash
+mkdir -p build && zip -r build/keynav.xpi manifest.json background.js icons/
+```
+
+The packaged extension will be in `build/keynav.xpi`.
+
 ## Features
 
 ### Tab Navigation (Vim-style HJKL)
