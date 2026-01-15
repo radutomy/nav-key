@@ -7,7 +7,7 @@ Vim-inspired keyboard navigation for Firefox with custom search shortcuts.
 To build the extension package:
 
 ```bash
-mkdir -p build && zip -r build/keynav.xpi manifest.json background.js icons/
+mkdir -p build && zip -r build/keynav.xpi manifest.json background.js content.js icons/
 ```
 
 The packaged extension will be in `build/keynav.xpi`.
