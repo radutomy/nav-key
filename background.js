@@ -25,7 +25,7 @@ const SEARCH_PROVIDERS = {
 
 // ==================== Keyboard Commands ====================
 
-browser.commands.onCommand.addListener(async (command) => {
+const handleCommand = async (command) => {
   const tabs = await browser.tabs.query({ currentWindow: true });
   const activeTab = tabs.find(t => t.active);
   const activeIndex = tabs.indexOf(activeTab);
@@ -49,6 +49,16 @@ browser.commands.onCommand.addListener(async (command) => {
   };
 
   commands[command]?.();
+};
+
+// Handle commands from manifest keyboard shortcuts (fallback for restricted pages)
+browser.commands.onCommand.addListener(handleCommand);
+
+// Handle commands from content script (for exclusive shortcut control)
+browser.runtime.onMessage.addListener((message) => {
+  if (message.command) {
+    handleCommand(message.command);
+  }
 });
 
 // ==================== Search Provider Redirect ====================
