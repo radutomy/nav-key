@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "KeyNav",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"description": "Vim-inspired keyboard navigation for tabs, scrolling, and history",
 	"author": "rtom",
 	"browser_specific_settings": {

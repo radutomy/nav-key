@@ -1,7 +1,20 @@
 const scroll = (tab, amount, smooth = false) => {
-  const behavior = smooth ? 'smooth' : 'auto';
   browser.tabs.executeScript(tab.id, {
-    code: `window.scrollBy({ top: ${amount}, behavior: '${behavior}' });`
+    code: `
+      (() => {
+        const opts = { top: ${amount}, behavior: '${smooth ? 'smooth' : 'auto'}' };
+        if (document.documentElement.scrollHeight > innerHeight) return scrollBy(opts);
+
+        const target = [...document.querySelectorAll('*')]
+          .filter(el => {
+            const s = getComputedStyle(el).overflowY;
+            return (s === 'auto' || s === 'scroll') && el.scrollHeight > el.clientHeight;
+          })
+          .sort((a, b) => (b.clientWidth * b.clientHeight) - (a.clientWidth * a.clientHeight))[0];
+
+        target?.scrollBy(opts);
+      })();
+    `
   });
 };
 
